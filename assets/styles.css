@@ -33,31 +33,34 @@ a{
 main{
     padding-top: 100px;
 }
-.profile {
+.profile{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.container {
     max-width: 40%;
     text-align: center;
-    align-items: center;
     position: relative;
 }
-.profile img{
+.container img{
     border-radius: 40%;
     border: 4px solid #000;
-    max-width: 100%;
+    width: 100%;
    
 }
 .photo-name{
     position: absolute;
     border:2px solid #000;
+    border-radius: 20px;
     background-color: aquamarine;
-    max-width: 300px;
-    bottom: 20px;
-    padding:2px;
-    left:25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
 }
-.container,
-.contact,
-.apps {
+.contact {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -77,7 +80,7 @@ p{
 
 .work{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     gap:20px;
@@ -87,7 +90,6 @@ p{
     flex:1 1 100px;
     position: relative;
 }
-
 .big{
     flex: 2 1 100px;
     position: relative;

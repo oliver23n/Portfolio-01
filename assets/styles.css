@@ -31,3 +31,14 @@ a{
 main{
     padding-top: 100px;
 }
+figure{
+    
+}
+figure img{
+    border-radius: 40%;
+    border: 4px solid #000;
+}
+.photo-name{
+    position: relative;
+
+}

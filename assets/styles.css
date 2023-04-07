@@ -18,7 +18,7 @@ header{
     width:100%;
     border-bottom: 4px solid black;
 }
-nav li{
+ li{
     display: inline;
     padding-left:10px;
     border-bottom: 2px solid beige;
@@ -30,15 +30,54 @@ a{
 }
 main{
     padding-top: 100px;
+    display: flex;
+    flex-wrap:wrap;
 }
-figure{
-    
-}
+
 figure img{
     border-radius: 40%;
     border: 4px solid #000;
+   
 }
 .photo-name{
     position: relative;
+    border:2px solid #000;
+    background-color: aquamarine;
+    margin-top:-50px;
+    padding:5px;
+    width:300px;
+}
+.container,
+.work,
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.profile,
+.about{
+    padding:20px;
 
 }
+.profile{
+    width:30%;
+}
+.about{
+    width:60%;
+}
+p{
+    text-align:left;
+    margin-top:40px;
+    height: auto;
+}
+img{
+    display:block;
+    height:400px;
+    width:400px;
+}
+
+
+
+
+

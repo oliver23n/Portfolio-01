@@ -1,5 +1,33 @@
 *{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin:0;
     padding:0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: #DAEBEF;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 20px;
+    position:fixed;
+    background-color: darkblue;
+    width:100%;
+    border-bottom: 4px solid black;
+}
+nav li{
+    display: inline;
+    padding-left:10px;
+    border-bottom: 2px solid beige;
+    margin-left:30px;
+}
+a{
+    text-decoration: none;
+    color:beige;
+}
+main{
+    padding-top: 100px;
 }

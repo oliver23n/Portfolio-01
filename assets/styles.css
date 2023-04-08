@@ -88,17 +88,18 @@ h2 {
 .photo-name {
     position: absolute;
     border: 2px solid #000;
-    border-radius: 20px;
+    border-radius: 25%;
     background-color:beige;
     color:#000;
-    bottom: 5px;
+    bottom: 6px;
     left: 0;
     right: 0;
-    width:250px;
+    width: 280px;
     margin: 0 auto; 
     padding: 20px 0;
     font-weight: 600;
     font-style: oblique;
+    font-size: 30px;
     
 }
     

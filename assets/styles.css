@@ -1,11 +1,14 @@
+/* Custom variables defined in root  */
 :root {
     --mycolor: linear-gradient(darkblue, aqua);
 }
 
+/* give the scroll-behavior to smooth in the html element */
 html {
     scroll-behavior: smooth;
 }
 
+/* Universal selector */
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -13,12 +16,14 @@ html {
     box-sizing: border-box;
 }
 
+/* ELement selector for body */
 body {
     position: relative;
     background-color: #DAEBEF;
     display: block;
 }
 
+/* Element selector for Header */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +36,7 @@ header {
     z-index: 2;
 }
 
+/* Element selector for Header */
 footer {
     position: relative;
     bottom: 0;
@@ -41,50 +47,55 @@ footer {
     padding: 12px;
 }
 
+/* element selector for li */
 li {
     display: inline;
     padding-left: 10px;
     margin-left: 30px;
 }
 
+/* element selector for a */
 a {
     text-decoration: none;
     color: beige;
     border-bottom: 2px solid beige;
 }
 
+/* element selector for main  */
 main {
     padding-top: 100px;
 }
 
+/* element selector for h2 */
 h2 {
     font-style: italic;
     border-bottom: 2px solid #000;
     margin-left: 20px;
 }
 
+/* Class selector for profile section*/
 .profile {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-
 }
 
+/* class selector for .profile-pic (this containts the profile pic and the nametag ) */
 .profile-pic {
     max-width: 40%;
     text-align: center;
     position: relative;
 }
 
+/* element selector for the img only in .proflie-pic class */
 .profile-pic img {
     border-radius: 30%;
     border: 4px solid #000;
     width: 100%;
     box-shadow: 10px 10px 5px gray;
-
-
 }
 
+/* class selector for .profile-name( which is the h1 element ) */
 .profile-name {
     position: absolute;
     border: 2px solid #000;
@@ -100,15 +111,15 @@ h2 {
     font-weight: 600;
     font-style: oblique;
     font-size: 30px;
-
 }
 
+/* class selector for section about me*/
 .about {
     padding: 20px;
     width: 60%;
 }
 
-
+/* element selector for the ul only in .contact class */
 .contact ul {
     display: flex;
     flex-wrap: wrap;
@@ -119,19 +130,19 @@ h2 {
     font-size: 18px;
 }
 
+/* element selector for a only in .contact class */
 .contact a {
     color: #000;
     border-bottom: 2px solid #000;
-
-
 }
 
-
+/* element selector for p */
 p {
     text-align: left;
     margin-top: 40px;
 }
 
+/* class selector for my work section */
 .work {
     display: flex;
     flex-wrap: wrap;
@@ -140,18 +151,20 @@ p {
     gap: 20px;
     margin: 20px;
     padding: 20px 0;
-
 }
 
+/* class selector for .apps( that contain the project image with a name) */
 .apps {
     position: relative;
     flex: 0 2 300px;
 }
 
+/* class selector for the project that sticks out(the image of the project is displayed bigger than the other) */
 .big {
     flex: 2 0 400px;
 }
 
+/* element selector for the images that are links in the class .apps */
 .apps a img {
     display: block;
     width: 100%;
@@ -162,6 +175,7 @@ p {
     box-shadow: 10px 10px 5px gray;
 }
 
+/* class selector for .text-box( the name of the project that sticks to the image of the project) */
 .text-box {
     position: absolute;
     bottom: 0;
@@ -175,17 +189,19 @@ p {
     border: 2px solid #000;
 }
 
+/* adds the effect when you hover over the project image . */
 .apps a img:hover {
     border: none;
     box-shadow: inset 5px 5px 30px darkblue, 5px 5px 20px blue;
-
 }
 
+/* adds the effect when you hover over the links in the header and footer */
 a:hover {
     color: darkred;
     border-bottom: 2px solid darkred;
 }
 
+/* media querie to give a responsive layout that adapts to the users viewport ( depending on the screen )  */
 @media screen and (max-width: 768px) {
 
     .profile {
@@ -210,3 +226,4 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
+}
